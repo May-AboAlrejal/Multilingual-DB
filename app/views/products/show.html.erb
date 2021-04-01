@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong><%= I18n.t '.products.show.title' %>:</strong>
   <%= @product.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong><%= I18n.t '.products.show.description' %>:</strong>
   <%= @product.description %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to "#{I18n.t '.products.show.edit'}", edit_product_path(@product) %> |
+<%= link_to "#{I18n.t '.products.edit.back'}", products_path %>

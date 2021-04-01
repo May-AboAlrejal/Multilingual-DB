@@ -31,3 +31,17 @@
 
 en:
   hello: "Hello world"
+  products:
+    index:
+      title: Our Products
+    show:
+      title: Title
+      description: Description
+      show: Show
+      edit: Edit
+      destroy: Destroy
+      new_product: New Product
+    edit:
+      back: Back      
+      edit_product: Editing Product
+    new: New Product

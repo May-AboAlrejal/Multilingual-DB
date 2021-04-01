@@ -1,2 +1,16 @@
 ar:
   hello: "مرحبا"
+  products:
+    index:
+      title: منتجاتنا
+    show:
+      title: عنوان      
+      description: وصف
+      show: إظهار
+      edit: تعديل
+      destroy: حذف
+      new_product: منتح جديد
+    edit:
+      back: رجوع      
+      edit_product: تعديل المنتج
+    new: منتج جديد

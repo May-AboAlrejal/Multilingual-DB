@@ -2,6 +2,12 @@
   <span class="navbar-brand mb-0 h1">CST8276</span>
 
   <li class="navbar-brand  mb-0 h1">
-    <%= link_to 'Prodcuts', products_path %> 
+    <%= link_to "#{I18n.t '.products.index.title'}", products_path %> 
+  </li>
+  <li class="navbar-brand  mb-0 h1">
+    <%= link_to 'English', root_path(locale: :en) %>
+  </li>
+  <li class="navbar-brand  mb-0 h1">
+    <%= link_to 'عربي', root_path(locale: :ar) %>
   </li>
 </nav>
