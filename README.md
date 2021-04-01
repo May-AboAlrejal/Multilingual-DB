@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Setting up local enviromen:
 
-Things you may want to cover:
+* [Install Rails](https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-project-installing-rails)
 
-* Ruby version
+* Start up the server with `rails server`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Navigate to: http://127.0.0.1:3000/products 

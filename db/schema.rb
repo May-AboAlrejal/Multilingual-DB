@@ -10,13 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_31_211818) do
+ActiveRecord::Schema.define(version: 2021_04_01_051425) do
 
-  create_table "products", force: :cascade do |t|
+  create_table "product_translations", force: :cascade do |t|
     t.string "title"
     t.text "description"
+    t.string "locale", null: false
+    t.integer "product_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["locale"], name: "index_product_translations_on_locale"
+    t.index ["product_id", "locale"], name: "index_product_translations_on_product_id_and_locale", unique: true
+  end
+
+  create_table "products", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "product_translations", "products"
 end
